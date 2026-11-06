@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angatuba Motores | Loja & Oficina 🛠️⚡</title>
+  <title>Angatuba Motores | Loja e Oficina</title>
   <meta name="description" content="Loja e oficina especializada em motores elétricos, bombas d'água, roçadeiras e materiais elétricos em Angatuba - SP. Vendas, consertos e rebobinamentos.">
-  <meta name="theme-color" content="#102A45">
+  <meta name="theme-color" content="#0B1C2D">
 
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="./Logo.jpg">
   <link rel="apple-touch-icon" href="./Logo.jpg">
 
-  <!-- Open Graph / Redes Sociais / WhatsApp Preview -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Angatuba Motores | Loja & Oficina 🛠️⚡">
+  <meta property="og:title" content="Angatuba Motores | Loja e Oficina">
   <meta property="og:description" content="Especialistas em motores, bombas, roçadeiras e materiais elétricos. Peças, consertos e rebobinamento em Angatuba - SP.">
   <meta property="og:image" content="./LojaFachada.jpg">
 
   <!-- Google Fonts: Montserrat & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -30,14 +30,15 @@
         extend: {
           colors: {
             brand: {
-              blue: '#102A45',
               navy: '#0B1C2D',
-              lightBlue: '#87B8F3',
-              yellow: '#F59E0B',
-              yellowHover: '#D97706',
-              dark: '#1E293B',
-              gray: '#64748B',
-              light: '#F8FAFC',
+              blue: '#102A45',
+              steel: '#1E3A5F',
+              accent: '#F59E0B',
+              accentHover: '#D97706',
+              dark: '#0F172A',
+              slate: '#334155',
+              muted: '#64748B',
+              surface: '#F8FAFC',
               whatsapp: '#25D366',
               whatsappHover: '#1EBE5D'
             }
@@ -56,7 +57,7 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Angatuba Motores | Loja & Oficina",
+    "name": "Angatuba Motores",
     "image": "LojaFachada.jpg",
     "telephone": "+5515996145059",
     "address": {
@@ -88,72 +89,41 @@
     ]
   }
   </script>
-
-  <style>
-    /* Estilos utilitários e animações suaves */
-    .pulse-glow {
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-      animation: pulse-green 2s infinite;
-    }
-    @keyframes pulse-green {
-      0% {
-        transform: scale(0.98);
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-      }
-      70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-      }
-      100% {
-        transform: scale(0.98);
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-      }
-    }
-  </style>
 </head>
-<body class="bg-brand-light text-brand-dark font-sans antialiased selection:bg-brand-yellow selection:text-brand-navy">
+<body class="bg-brand-surface text-brand-dark font-sans antialiased selection:bg-brand-accent selection:text-brand-navy">
 
   <!-- ======================================================== -->
-  <!-- 1. HEADER FIXO (STICKY HEADER)                           -->
+  <!-- 1. HEADER FIXO                                           -->
   <!-- ======================================================== -->
-  <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md border-b border-brand-blue/60 shadow-lg transition-all">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+  <header class="sticky top-0 z-40 bg-brand-navy border-b border-slate-800 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
       
-      <!-- Logo & Identificação -->
-      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group">
-        <div class="w-11 h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow-md overflow-hidden group-hover:scale-105 transition-transform border border-white/20 shrink-0">
+      <!-- Logo & Título (Apenas título conforme solicitado) -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-white p-0.5 flex items-center justify-center shrink-0 border border-slate-300">
           <img src="./Logo.jpg" alt="Logo Angatuba Motores" class="w-full h-full object-contain">
         </div>
-        <div>
-          <span class="block font-heading font-black text-lg md:text-xl text-white tracking-wider leading-none">
-            ANGATUBA <span class="text-brand-yellow">MOTORES</span>
-          </span>
-          <span class="text-[11px] font-semibold tracking-wide text-brand-lightBlue flex items-center gap-1.5 mt-1">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            LOJA &amp; OFICINA 🛠️⚡
-          </span>
-        </div>
+        <span class="font-heading font-black text-lg sm:text-xl text-white tracking-wider">
+          ANGATUBA <span class="text-brand-accent">MOTORES</span>
+        </span>
       </a>
 
-      <!-- Ações Rápidas do Cabeçalho -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <!-- Telefone / Link Rápido (Desktop / Tablet) -->
-        <a href="tel:+5515996145059" class="hidden sm:flex items-center gap-2 text-xs font-medium text-slate-300 hover:text-white px-3 py-2 rounded-lg hover:bg-white/5 transition">
-          <svg class="w-4 h-4 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg>
-          <span>(15) 99614-5059</span>
-        </a>
+      <!-- Navegação & Contato -->
+      <div class="flex items-center gap-4 sm:gap-6">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#loja" class="hover:text-white transition">Loja</a>
+          <a href="#oficina" class="hover:text-white transition">Oficina</a>
+          <a href="#localizacao" class="hover:text-white transition">Localização</a>
+        </nav>
 
-        <!-- Botão WhatsApp Compacto Header -->
         <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Angatuba%20Motores%20e%20gostaria%20de%20atendimento." 
            target="_blank" 
            rel="noopener noreferrer"
-           class="inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white text-xs md:text-sm font-bold px-3.5 py-2.5 rounded-xl shadow-md transition transform active:scale-95">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.983.541 1.879.82 2.801.82 3.181 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.767-5.773-5.767zm7.535 5.766c-.002 4.148-3.375 7.52-7.534 7.52-1.282 0-2.484-.336-3.542-.942l-4.49 1.176 1.196-4.381c-.689-1.121-1.059-2.434-1.058-3.373.002-4.149 3.376-7.521 7.535-7.521 4.158 0 7.534 3.373 7.535 7.521z"/>
+           class="inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg transition active:scale-95 shadow-sm">
+          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.983.541 1.879.82 2.801.82 3.181 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.767-5.773-5.773zm7.535 5.766c-.002 4.148-3.375 7.52-7.534 7.52-1.282 0-2.484-.336-3.542-.942l-4.49 1.176 1.196-4.381c-.689-1.121-1.059-2.434-1.058-3.373.002-4.149 3.376-7.521 7.535-7.521 4.158 0 7.534 3.373 7.535 7.521z"/>
           </svg>
-          <span class="hidden xs:inline">Chamar no</span> WhatsApp
+          <span>WhatsApp</span>
         </a>
       </div>
 
@@ -161,121 +131,70 @@
   </header>
 
   <!-- ======================================================== -->
-  <!-- 2. HERO PRINCIPAL (APRESENTAÇÃO INICIAL COM FOTO)        -->
+  <!-- 2. SEÇÃO HERO (100VH RESPONSIVO)                         -->
   <!-- ======================================================== -->
-  <section class="relative bg-gradient-to-b from-brand-navy via-brand-blue to-slate-900 text-white overflow-hidden pt-8 pb-14 md:py-20">
-    <!-- Efeito sutil de textura de fundo elétrico -->
-    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#87B8F3_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
-
-    <div class="max-w-6xl mx-auto px-4 relative z-10">
+  <section class="min-h-[calc(100dvh-4rem)] flex flex-col justify-center bg-brand-navy text-white relative py-10 sm:py-12 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
-        <!-- Conteúdo Textual / Ação -->
+        <!-- Texto Principal -->
         <div class="lg:col-span-7 text-center lg:text-left">
           
-          <!-- Badge de Localização / Credibilidade -->
-          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full text-xs font-medium text-brand-lightBlue mb-5">
-            <svg class="w-4 h-4 text-brand-yellow shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            <span>Rua Major Pereira de Moraes, 858 • Angatuba – SP</span>
-          </div>
-
-          <!-- Título Principal -->
-          <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl leading-tight text-white mb-4 tracking-tight">
-            Sua Loja &amp; Oficina Especializada em <span class="text-brand-yellow">Motores, Bombas</span> e Materiais Elétricos
-          </h1>
-
-          <!-- Descrição Clara e Rápida -->
-          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
-            Peças, equipamentos novos e assistência técnica com rebobinamento, conserto de bombas d'água, roçadeiras e instalações elétricas completas.
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-brand-accent mb-3">
+            Angatuba e Região
           </p>
 
-          <!-- 2 Botões de Ação Imediata (CTAs) -->
-          <div class="flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start">
-            
-            <!-- Botão Oficina -->
-            <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20conserto/manuten%C3%A7%C3%A3o%20de%20equipamento%20(motor/bomba/ro%C3%A7adeira)."
+          <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight text-white mb-5 tracking-tight">
+            Motores, Bombas e Materiais Elétricos
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
+            Loja completa de equipamentos e peças, com oficina técnica especializada em rebobinamento, conserto de bombas d'água e roçadeiras.
+          </p>
+
+          <!-- Botões de Ação Direta -->
+          <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+            <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20conserto/manuten%C3%A7%C3%A3o%20de%20equipamento."
                target="_blank"
                rel="noopener noreferrer"
-               class="flex items-center justify-center gap-2.5 bg-brand-yellow hover:bg-brand-yellowHover text-brand-navy font-bold text-base px-6 py-4 rounded-xl shadow-lg shadow-brand-yellow/20 transition transform active:scale-95 group">
-              <span class="text-xl">🛠️</span>
-              <span>Solicitar Orçamento de Oficina</span>
-              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
-              </svg>
+               class="inline-flex items-center justify-center bg-brand-accent hover:bg-brand-accentHover text-brand-navy font-bold text-sm sm:text-base px-6 py-3.5 rounded-lg transition active:scale-95 shadow-sm">
+              Orçamento de Oficina
             </a>
 
-            <!-- Botão Loja -->
-            <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20pre%C3%A7o%20e%20disponibilidade%20de%20produtos/materiais%20el%C3%A9tricos%20na%20loja."
+            <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20produtos%20e%20materiais%20el%C3%A9tricos%20na%20loja."
                target="_blank"
                rel="noopener noreferrer"
-               class="flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/15 text-white border border-white/20 font-semibold text-base px-6 py-4 rounded-xl backdrop-blur-md transition transform active:scale-95">
-              <span class="text-xl">⚡</span>
-              <span>Consultar Peças &amp; Materiais</span>
+               class="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-lg border border-slate-700 transition active:scale-95">
+              Consultar Peças e Produtos
             </a>
-
           </div>
 
-          <!-- Mini Garantia / Confiança -->
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 mt-8 pt-6 border-t border-white/10 text-xs text-slate-300">
-            <div class="flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-              </svg>
-              <span>Serviços com Garantia</span>
-            </div>
-            <div class="flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-              </svg>
-              <span>Atendimento Rural &amp; Urbano</span>
-            </div>
-            <div class="flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-              </svg>
-              <span>Diagnóstico Rápido</span>
-            </div>
+          <!-- Informações Rápidas -->
+          <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-8 text-xs text-slate-400">
+            <div>Rua Major Pereira de Moraes, 858 – Angatuba/SP</div>
+            <div class="hidden sm:inline text-slate-600">•</div>
+            <div>Atendimento comercial e rural</div>
           </div>
 
         </div>
 
-        <!-- Coluna da Foto da Fachada com Tratamento Moderno -->
-        <div class="lg:col-span-5 max-w-sm mx-auto lg:max-w-none w-full">
-          <div class="relative group">
-            
-            <!-- Brilho de Fundo -->
-            <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-yellow to-brand-lightBlue rounded-3xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
-            
-            <!-- Cartão com a Foto Real -->
-            <div class="relative bg-brand-navy rounded-2xl overflow-hidden border border-white/15 shadow-2xl">
-              <div class="aspect-[4/5] sm:aspect-[3/4] overflow-hidden relative">
-                <img src="./LojaFachada.jpg" 
-                     alt="Fachada Angatuba Motores - Loja e Oficina" 
-                     class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/20 to-transparent"></div>
-              </div>
-
-              <!-- Informação Sobreposta no Rodapé da Foto -->
-              <div class="p-4 sm:p-5 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-navy via-brand-navy/95 to-transparent text-left">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-brand-yellow mb-0.5">Visite nossa loja</span>
-                    <h3 class="font-heading font-bold text-base text-white">Angatuba Motores</h3>
-                    <p class="text-xs text-slate-300">Rua Major Pereira de Moraes, 858</p>
-                  </div>
-                  <a href="#localizacao" class="bg-white/10 hover:bg-white/20 p-2.5 rounded-xl backdrop-blur-md text-white transition">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-
+        <!-- Foto da Fachada -->
+        <div class="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none">
+          <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-xl">
+            <div class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] overflow-hidden">
+              <img src="./LojaFachada.jpg" 
+                   alt="Fachada Angatuba Motores" 
+                   class="w-full h-full object-cover">
             </div>
-
+            <div class="p-4 bg-slate-900 border-t border-slate-800 flex items-center justify-between">
+              <div>
+                <p class="font-heading font-bold text-sm text-white">Angatuba Motores</p>
+                <p class="text-xs text-slate-400">Oficina e Loja Física</p>
+              </div>
+              <a href="#localizacao" class="text-xs font-semibold text-brand-accent hover:underline">
+                Ver localização
+              </a>
+            </div>
           </div>
         </div>
 
@@ -284,148 +203,122 @@
   </section>
 
   <!-- ======================================================== -->
-  <!-- 3. SEÇÃO LOJA (PRODUTOS & MATERIAIS ELÉTRICOS)           -->
+  <!-- 3. SEÇÃO LOJA (100VH RESPONSIVO)                         -->
   <!-- ======================================================== -->
-  <section id="loja" class="py-14 sm:py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
+  <section id="loja" class="min-h-screen flex flex-col justify-center py-12 sm:py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
       
       <!-- Cabeçalho da Seção -->
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-brand-blue text-xs font-bold uppercase tracking-wider mb-2">
-          <span>🏪</span> Catálogo da Loja
-        </div>
-        <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-navy">
-          Equipamentos &amp; Materiais Elétricos
+      <div class="max-w-3xl mb-8 sm:mb-12">
+        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Loja e Peças</p>
+        <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-dark">
+          Produtos e Materiais Elétricos
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Peças e suprimentos das melhores marcas para residências, oficinas e propriedades rurais.
+          Equipamentos novos, peças de reposição e componentes elétricos para pronta entrega ou encomenda.
         </p>
       </div>
 
-      <!-- Grid de Categorias da Loja -->
+      <!-- Grid dos 4 Grupos de Produtos -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         
-        <!-- Card 1: Motores Elétricos -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 hover:border-brand-blue/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Motores Elétricos -->
+        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between hover:border-slate-300 transition">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-blue-100/80 text-brand-blue flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
-            <h3 class="font-heading font-bold text-lg text-brand-navy mb-2">Motores Elétricos</h3>
+            <h3 class="font-heading font-bold text-base text-brand-dark mb-2">Motores Elétricos</h3>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Motores monofásicos e trifásicos de diversas rotações e potências para uso agrícola, comercial e industrial.
+              Modelos monofásicos e trifásicos para aplicações agrícolas, comerciais e industriais.
             </p>
-            <ul class="text-xs text-slate-500 space-y-1.5 mb-5 border-t border-slate-200/60 pt-3">
-              <li class="flex items-center gap-1.5">✓ Motores monofásicos e trifásicos</li>
-              <li class="flex items-center gap-1.5">✓ Alta e baixa rotação</li>
-              <li class="flex items-center gap-1.5">✓ Peças de reposição e carcaças</li>
+            <ul class="text-xs text-slate-600 space-y-1.5 border-t border-slate-200 pt-3 mb-5">
+              <li>Monofásicos e trifásicos</li>
+              <li>Alta e baixa rotação</li>
+              <li>Peças e carcaças de reposição</li>
             </ul>
           </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20modelos%20e%20pre%C3%A7os%20de%20Motores%20El%C3%A9tricos." 
+          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20pre%C3%A7os%20e%20modelos%20de%20Motores%20El%C3%A9tricos." 
              target="_blank"
              rel="noopener noreferrer"
-             class="w-full text-center bg-brand-blue hover:bg-brand-navy text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">
+             class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
             Consultar Estoque
           </a>
         </div>
 
-        <!-- Card 2: Bombas d'Água -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 hover:border-brand-blue/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Bombas d'Água -->
+        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between hover:border-slate-300 transition">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-cyan-100/80 text-cyan-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-              </svg>
-            </div>
-            <h3 class="font-heading font-bold text-lg text-brand-navy mb-2">Bombas d'Água</h3>
+            <h3 class="font-heading font-bold text-base text-brand-dark mb-2">Bombas d'Água</h3>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Equipamentos de alta vazão e pressão para poços artesianos, reservatórios, chácaras e irrigação.
+              Equipamentos para poço semiartesiano, reservatórios, caixas d'água e sistemas de irrigação.
             </p>
-            <ul class="text-xs text-slate-500 space-y-1.5 mb-5 border-t border-slate-200/60 pt-3">
-              <li class="flex items-center gap-1.5">✓ Bombas submersas (poço artesiano)</li>
-              <li class="flex items-center gap-1.5">✓ Centrífugas e periféricas</li>
-              <li class="flex items-center gap-1.5">✓ Pressurizadores e injetoras</li>
+            <ul class="text-xs text-slate-600 space-y-1.5 border-t border-slate-200 pt-3 mb-5">
+              <li>Bombas submersas para poço</li>
+              <li>Centrífugas e periféricas</li>
+              <li>Pressurizadores e rotores</li>
             </ul>
           </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20as%20op%C3%A7%C3%B5es%20de%20Bombas%20d'%C3%81gua." 
+          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20Bombas%20d'%C3%81gua%20dispon%C3%ADveis." 
              target="_blank"
              rel="noopener noreferrer"
-             class="w-full text-center bg-brand-blue hover:bg-brand-navy text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">
+             class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
             Consultar Estoque
           </a>
         </div>
 
-        <!-- Card 3: Roçadeiras & Combustão -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 hover:border-brand-blue/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Roçadeiras & Peças -->
+        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between hover:border-slate-300 transition">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-100/80 text-brand-yellowHover flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879a3 3 0 11-4.242-4.242L7.757 7.757m0 0l7 7M3 3l18 18" />
-              </svg>
-            </div>
-            <h3 class="font-heading font-bold text-lg text-brand-navy mb-2">Roçadeiras &amp; Peças</h3>
+            <h3 class="font-heading font-bold text-base text-brand-dark mb-2">Roçadeiras &amp; Peças</h3>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Equipamentos a combustão e linha completa de consumíveis para manutenção de jardins e pastagens.
+              Equipamentos a combustão e linha completa de consumíveis e peças para manutenção.
             </p>
-            <ul class="text-xs text-slate-500 space-y-1.5 mb-5 border-t border-slate-200/60 pt-3">
-              <li class="flex items-center gap-1.5">✓ Roçadeiras e motosserras</li>
-              <li class="flex items-center gap-1.5">✓ Fios de nylon, lâminas e carretéis</li>
-              <li class="flex items-center gap-1.5">✓ Carburadores e velas de ignição</li>
+            <ul class="text-xs text-slate-600 space-y-1.5 border-t border-slate-200 pt-3 mb-5">
+              <li>Roçadeiras profissionais</li>
+              <li>Fios de nylon, lâminas e carretéis</li>
+              <li>Carburadores, velas e filtros</li>
             </ul>
           </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Ro%C3%A7adeiras%20e%20pe%C3%A7as." 
+          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20Ro%C3%A7adeiras%20e%20pe%C3%A7as%20de%20reposi%C3%A7%C3%A3o." 
              target="_blank"
              rel="noopener noreferrer"
-             class="w-full text-center bg-brand-blue hover:bg-brand-navy text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">
+             class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
             Consultar Estoque
           </a>
         </div>
 
-        <!-- Card 4: Materiais Elétricos -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 hover:border-brand-blue/30 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Materiais Elétricos -->
+        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between hover:border-slate-300 transition">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-yellow-100/80 text-yellow-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <h3 class="font-heading font-bold text-lg text-brand-navy mb-2">Materiais Elétricos</h3>
+            <h3 class="font-heading font-bold text-base text-brand-dark mb-2">Materiais Elétricos</h3>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Tudo para instalações elétricas seguras: condutores, proteção e componentes de comando.
+              Condutores, proteção e componentes elétricos para montagem e manutenção.
             </p>
-            <ul class="text-xs text-slate-500 space-y-1.5 mb-5 border-t border-slate-200/60 pt-3">
-              <li class="flex items-center gap-1.5">✓ Fios, cabos e eletrodutos</li>
-              <li class="flex items-center gap-1.5">✓ Disjuntores, contatores e relés</li>
-              <li class="flex items-center gap-1.5">✓ Capacitores e chaves de partida</li>
+            <ul class="text-xs text-slate-600 space-y-1.5 border-t border-slate-200 pt-3 mb-5">
+              <li>Fios, cabos e conectores</li>
+              <li>Disjuntores, contatores e relés</li>
+              <li>Capacitores e chaves de partida</li>
             </ul>
           </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20Materiais%20El%C3%A9tricos." 
+          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o%20de%20materiais%20el%C3%A9tricos." 
              target="_blank"
              rel="noopener noreferrer"
-             class="w-full text-center bg-brand-blue hover:bg-brand-navy text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">
+             class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
             Cotar Materiais
           </a>
         </div>
 
       </div>
 
-      <!-- Barra de Ação da Loja -->
-      <div class="mt-10 p-6 rounded-2xl bg-gradient-to-r from-brand-navy to-brand-blue text-white flex flex-col sm:flex-row items-center justify-between gap-4">
+      <!-- Barra de Suporte ao Balcão -->
+      <div class="mt-8 p-5 rounded-xl bg-slate-100 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <h4 class="font-heading font-bold text-lg text-white">Não encontrou o que procura?</h4>
-          <p class="text-xs sm:text-sm text-slate-300">Consulte nosso balcão. Temos encomendas rápidas de peças e produtos sob medida.</p>
+          <p class="font-heading font-bold text-sm text-brand-dark">Precisa de um item específico?</p>
+          <p class="text-xs text-slate-600">Consulte nossa equipe diretamente no WhatsApp para verificar disponibilidade imediata.</p>
         </div>
-        <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Procuro%20uma%20pe%C3%A7a/produto%20espec%C3%ADfico%20na%20loja%20de%20voc%C3%AAs." 
+        <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Procuro%20um%20item%20espec%C3%ADfico%20na%20loja." 
            target="_blank" 
            rel="noopener noreferrer"
-           class="shrink-0 inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold text-sm px-5 py-3 rounded-xl shadow-md transition">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.983.541 1.879.82 2.801.82 3.181 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.767-5.773-5.773zm7.535 5.766c-.002 4.148-3.375 7.52-7.534 7.52-1.282 0-2.484-.336-3.542-.942l-4.49 1.176 1.196-4.381c-.689-1.121-1.059-2.434-1.058-3.373.002-4.149 3.376-7.521 7.535-7.521 4.158 0 7.534 3.373 7.535 7.521z"/>
-          </svg>
-          <span>Falar com o Balcão no WhatsApp</span>
+           class="inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition shrink-0">
+          <span>Falar com o Balcão</span>
         </a>
       </div>
 
@@ -433,119 +326,74 @@
   </section>
 
   <!-- ======================================================== -->
-  <!-- 4. SEÇÃO OFICINA (SERVIÇOS TÉCNICOS & CONSERTOS)         -->
+  <!-- 4. SEÇÃO OFICINA (100VH RESPONSIVO)                      -->
   <!-- ======================================================== -->
-  <section id="oficina" class="py-14 sm:py-20 bg-slate-100 border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4">
+  <section id="oficina" class="min-h-screen flex flex-col justify-center py-12 sm:py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
       
       <!-- Cabeçalho da Seção -->
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-brand-yellowHover text-xs font-bold uppercase tracking-wider mb-2">
-          <span>🛠️</span> Oficina Especializada
-        </div>
-        <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-navy">
-          Consertos, Rebobinamento &amp; Instalações
+      <div class="max-w-3xl mb-8 sm:mb-12">
+        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Assistência Técnica</p>
+        <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-dark">
+          Serviços de Oficina
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Diagnóstico transparente, bancada com equipamentos de precisão e testes com carga antes da entrega.
+          Diagnóstico técnico, consertos com peças originais e testes práticos em bancada antes da entrega.
         </p>
       </div>
 
-      <!-- Grid de Serviços -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Grid dos Serviços de Oficina -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         
-        <!-- Serviço 1: Rebobinamento -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-brand-navy text-brand-yellow flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Rebobinamento de Motores Elétricos</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                Rebobinamento completo com cobre eletrolítico de alta pureza, verniz isolante classe H e troca de rolamentos com folga C3.
-              </p>
-              <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded-md">
-                Garantia no enrolamento e isolação
-              </span>
-            </div>
-          </div>
+        <!-- Rebobinamento -->
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-2">Rebobinamento de Motores Elétricos</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+            Rebobinamento técnico com isolamento de alta classe térmica, substituição de rolamentos e testes elétricos de isolação e corrente.
+          </p>
+          <span class="text-[11px] font-semibold text-slate-500">Motores monofásicos e trifásicos</span>
         </div>
 
-        <!-- Serviço 2: Bombas d'Água -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-brand-navy text-brand-lightBlue flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Manutenção de Bombas d'Água</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                Substituição de selos mecânicos, rotores desgastados, juntas de vedação e recuperação de eixos com teste hidráulico de estanqueidade.
-              </p>
-              <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded-md">
-                Atendimento para poços e chácaras
-              </span>
-            </div>
-          </div>
+        <!-- Bombas d'Água -->
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-2">Manutenção de Bombas d'Água</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+            Troca de selo mecânico, substituição de rotores desgastados, vedação e verificação completa de pressão e vazão.
+          </p>
+          <span class="text-[11px] font-semibold text-slate-500">Bombas submersas, centrífugas e periféricas</span>
         </div>
 
-        <!-- Serviço 3: Roçadeiras e Ferramentas -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-brand-navy text-emerald-400 flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Conserto de Roçadeiras &amp; Motores 2T/4T</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                Revisão de sistema de ignição, descarbonização, desobstrução e regulagem de carburadores para que sua ferramenta pegue de primeira.
-              </p>
-              <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded-md">
-                Peças originais e regulagem precisa
-              </span>
-            </div>
-          </div>
+        <!-- Roçadeiras & Pequenos Motores -->
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-2">Conserto de Roçadeiras e Motores 2T/4T</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+            Limpeza e regulagem de carburadores, troca de membranas, revisão de sistema de partida retrátil e ignição.
+          </p>
+          <span class="text-[11px] font-semibold text-slate-500">Revisão preventiva e corretiva</span>
         </div>
 
-        <!-- Serviço 4: Instalações e Painéis Elétricos -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-brand-navy text-brand-yellow flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Painéis Elétricos &amp; Instalações</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                Montagem de quadros de comando automático para bombas, partida de motores (direta, estrela-triângulo ou inversor) e proteção elétrica.
-              </p>
-              <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded-md">
-                Proteção contra queima e falta de fase
-              </span>
-            </div>
-          </div>
+        <!-- Painéis e Automação -->
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-2">Montagem de Painéis e Comandos</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+            Instalação de quadros de comando automático com boia, relé de falta de fase e proteção contra queima de motores.
+          </p>
+          <span class="text-[11px] font-semibold text-slate-500">Automação de poços e caixas d'água</span>
         </div>
 
       </div>
 
-      <!-- Botão Centralizado da Oficina -->
-      <div class="text-center mt-10">
-        <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20um%20equipamento%20na%20oficina." 
+      <!-- Ação da Oficina -->
+      <div class="mt-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-xl bg-brand-navy text-white">
+        <div>
+          <p class="font-heading font-bold text-sm text-white">Precisa de avaliação técnica do seu equipamento?</p>
+          <p class="text-xs text-slate-300">Traga seu equipamento à nossa oficina ou envie uma mensagem no WhatsApp.</p>
+        </div>
+        <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20de%20equipamento%20na%20oficina." 
            target="_blank" 
            rel="noopener noreferrer"
-           class="inline-flex items-center gap-2.5 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg transition transform active:scale-95">
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.983.541 1.879.82 2.801.82 3.181 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.767-5.773-5.773zm7.535 5.766c-.002 4.148-3.375 7.52-7.534 7.52-1.282 0-2.484-.336-3.542-.942l-4.49 1.176 1.196-4.381c-.689-1.121-1.059-2.434-1.058-3.373.002-4.149 3.376-7.521 7.535-7.521 4.158 0 7.534 3.373 7.535 7.521z"/>
-          </svg>
-          <span>Solicitar Avaliação na Oficina pelo WhatsApp</span>
+           class="inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition shrink-0">
+          <span>Solicitar Avaliação</span>
         </a>
       </div>
 
@@ -553,106 +401,78 @@
   </section>
 
   <!-- ======================================================== -->
-  <!-- 5. LOCALIZAÇÃO, ROTA & HORÁRIOS                          -->
+  <!-- 5. SEÇÃO LOCALIZAÇÃO & HORÁRIOS (100VH RESPONSIVO)       -->
   <!-- ======================================================== -->
-  <section id="localizacao" class="py-14 sm:py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
+  <section id="localizacao" class="min-h-screen flex flex-col justify-center py-12 sm:py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
       
-      <!-- Cabeçalho -->
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider mb-2">
-          <span>📍</span> Onde Estamos
-        </div>
-        <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-navy">
-          Venha nos Visitar em Angatuba
+      <!-- Cabeçalho da Seção -->
+      <div class="max-w-3xl mb-8 sm:mb-12">
+        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Contato e Endereço</p>
+        <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-dark">
+          Localização e Atendimento
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Fácil acesso no centro da cidade, com estacionamento e atendimento prático no balcão.
+          Nossa loja e oficina estão localizadas em ponto de fácil acesso em Angatuba.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Bloco de Informações de Contato -->
+        <!-- Bloco de Informações -->
         <div class="lg:col-span-5 space-y-4">
           
-          <!-- Card de Endereço -->
-          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
-            <div class="flex items-start gap-3.5">
-              <div class="w-10 h-10 rounded-xl bg-brand-blue text-white flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div>
-                <span class="text-xs font-bold uppercase text-slate-500 tracking-wider">Endereço Completo</span>
-                <p class="font-bold text-brand-navy text-base mt-0.5">Rua Major Pereira de Moraes, nº 858</p>
-                <p class="text-xs text-slate-600">Angatuba – SP • CEP: 18240-000</p>
-              </div>
-            </div>
+          <!-- Endereço -->
+          <div class="border border-slate-200 rounded-xl p-5 bg-brand-surface">
+            <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Endereço</p>
+            <p class="font-bold text-brand-dark text-base mt-1">Rua Major Pereira de Moraes, nº 858</p>
+            <p class="text-xs text-slate-600">Angatuba – SP • CEP: 18240-000</p>
             
             <a href="https://www.google.com/maps/search/?api=1&query=Rua+Major+Pereira+de+Moraes,+858,+Angatuba+-+SP" 
                target="_blank"
                rel="noopener noreferrer"
-               class="mt-4 w-full inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-blue text-white text-xs font-bold py-3 px-4 rounded-xl transition">
-              <svg class="w-4 h-4 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-              </svg>
-              <span>Abrir Rota no Google Maps / GPS</span>
+               class="mt-4 inline-flex items-center justify-center w-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-2.5 px-4 rounded-lg transition">
+              Abrir no Google Maps
             </a>
           </div>
 
-          <!-- Card de Horários -->
-          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
-            <div class="flex items-start gap-3.5">
-              <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-yellowHover flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+          <!-- Horários -->
+          <div class="border border-slate-200 rounded-xl p-5 bg-brand-surface">
+            <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Horário de Funcionamento</p>
+            <div class="mt-2 text-xs space-y-2">
+              <div class="flex justify-between border-b border-slate-200 pb-1.5">
+                <span class="text-slate-600">Segunda a Sexta:</span>
+                <span class="font-semibold text-brand-dark">07h30 às 18h00</span>
               </div>
-              <div class="w-full">
-                <span class="text-xs font-bold uppercase text-slate-500 tracking-wider">Horário de Funcionamento</span>
-                <div class="mt-2 text-xs space-y-1.5">
-                  <div class="flex justify-between border-b border-slate-200/60 pb-1">
-                    <span class="font-medium text-slate-700">Segunda a Sexta-feira:</span>
-                    <span class="font-bold text-brand-navy">07h30 às 18h00</span>
-                  </div>
-                  <div class="flex justify-between border-b border-slate-200/60 pb-1">
-                    <span class="font-medium text-slate-700">Sábado:</span>
-                    <span class="font-bold text-brand-navy">07h30 às 12h00</span>
-                  </div>
-                  <div class="flex justify-between text-slate-400">
-                    <span>Domingo:</span>
-                    <span>Fechado</span>
-                  </div>
-                </div>
+              <div class="flex justify-between border-b border-slate-200 pb-1.5">
+                <span class="text-slate-600">Sábado:</span>
+                <span class="font-semibold text-brand-dark">07h30 às 12h00</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Domingo:</span>
+                <span>Fechado</span>
               </div>
             </div>
           </div>
 
-          <!-- Card de Atendimento Direto -->
-          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
-            <div class="flex items-center justify-between">
-              <div>
-                <span class="text-xs font-bold uppercase text-slate-500 tracking-wider">Telefone &amp; WhatsApp</span>
-                <p class="font-heading font-black text-lg text-brand-navy mt-0.5">(15) 99614-5059</p>
-              </div>
-              <a href="tel:+5515996145059" class="p-3 bg-white border border-slate-200 hover:border-brand-blue text-brand-navy rounded-xl shadow-sm transition">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </a>
+          <!-- Telefone -->
+          <div class="border border-slate-200 rounded-xl p-5 bg-brand-surface flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Telefone e WhatsApp</p>
+              <p class="font-heading font-bold text-base text-brand-dark mt-0.5">(15) 99614-5059</p>
             </div>
+            <a href="tel:+5515996145059" class="text-xs font-semibold text-slate-700 hover:text-black border border-slate-300 rounded-lg px-3 py-2 bg-white transition">
+              Ligar
+            </a>
           </div>
 
         </div>
 
-        <!-- Bloco do Mapa Interativo Embed -->
-        <div class="lg:col-span-7 h-full min-h-[340px] rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+        <!-- Mapa Embutido -->
+        <div class="lg:col-span-7 h-full min-h-[320px] rounded-xl overflow-hidden border border-slate-200">
           <iframe 
             src="https://www.google.com/maps?q=Rua+Major+Pereira+de+Moraes,+858,+Angatuba+-+SP&output=embed"
-            class="w-full h-full min-h-[380px] border-0" 
+            class="w-full h-full min-h-[350px] border-0" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"
@@ -668,66 +488,51 @@
   <!-- ======================================================== -->
   <!-- 6. RODAPÉ INSTITUCIONAL                                  -->
   <!-- ======================================================== -->
-  <footer class="bg-brand-navy text-slate-400 py-10 border-t border-brand-blue/40 text-xs">
-    <div class="max-w-6xl mx-auto px-4">
+  <footer class="bg-brand-navy text-slate-400 py-8 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
       
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-white/10 text-center sm:text-left">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-800 text-center sm:text-left">
         
         <!-- Logo Rodapé -->
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-md">
+          <div class="w-8 h-8 rounded-lg bg-white p-0.5 flex items-center justify-center shrink-0 border border-slate-300">
             <img src="./Logo.jpg" alt="Logo Angatuba Motores" class="w-full h-full object-contain">
           </div>
-          <div>
-            <span class="block font-heading font-black text-white text-base">ANGATUBA MOTORES</span>
-            <span class="text-slate-400 text-[11px]">Loja &amp; Oficina Especializada</span>
-          </div>
+          <span class="font-heading font-black text-white text-base">ANGATUBA MOTORES</span>
         </div>
 
-        <!-- Links Rápidos -->
-        <div class="flex items-center gap-5 text-slate-300">
+        <!-- Links -->
+        <div class="flex items-center gap-6 text-slate-400">
           <a href="#loja" class="hover:text-white transition">Loja</a>
           <a href="#oficina" class="hover:text-white transition">Oficina</a>
           <a href="#localizacao" class="hover:text-white transition">Localização</a>
-          <a href="https://instagram.com/angatuba_motores" target="_blank" rel="noopener noreferrer" class="hover:text-brand-yellow flex items-center gap-1 transition">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-            <span>Instagram</span>
-          </a>
+          <a href="https://instagram.com/angatuba_motores" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Instagram</a>
         </div>
 
       </div>
 
-      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px] text-center sm:text-left">
-        <p>© 2026 Angatuba Motores | Loja &amp; Oficina. Todos os direitos reservados.</p>
-        <p>Rua Major Pereira de Moraes, 858 – Angatuba/SP • WhatsApp: (15) 99614-5059</p>
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-500 text-[11px] text-center sm:text-left">
+        <p>© 2026 Angatuba Motores. Todos os direitos reservados.</p>
+        <p>Rua Major Pereira de Moraes, 858 – Angatuba/SP</p>
       </div>
 
     </div>
   </footer>
 
   <!-- ======================================================== -->
-  <!-- 7. BOTÃO FLUTUANTE DE WHATSAPP (ALTA CONVERSÃO)          -->
+  <!-- 7. BOTÃO FLUTUANTE WHATSAPP                              -->
   <!-- ======================================================== -->
-  <aside aria-label="Contato direto no WhatsApp" class="fixed bottom-5 right-5 z-50 flex items-center gap-2 group">
-    
-    <!-- Tooltip convidativa -->
-    <span class="hidden sm:inline-block bg-brand-navy text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-md border border-white/10 opacity-90 group-hover:opacity-100 transition">
-      Fale no WhatsApp ⚡
-    </span>
-
-    <!-- Botão com Animação Pulse -->
-    <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Estou%20no%20site%20da%20Angatuba%20Motores%20e%20gostaria%20de%20um%20atendimento."
+  <div class="fixed bottom-5 right-5 z-50">
+    <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Estou%20no%20site%20da%20Angatuba%20Motores%20e%20gostaria%20de%20atendimento."
        target="_blank"
        rel="noopener noreferrer"
-       class="w-14 h-14 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white rounded-full flex items-center justify-center shadow-2xl pulse-glow transition-transform hover:scale-110 active:scale-95"
-       aria-label="Abrir conversa no WhatsApp com a Angatuba Motores">
-      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+       class="w-13 h-13 p-3.5 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95"
+       aria-label="Contato no WhatsApp">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.983.541 1.879.82 2.801.82 3.181 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.767-5.773-5.773zm7.535 5.766c-.002 4.148-3.375 7.52-7.534 7.52-1.282 0-2.484-.336-3.542-.942l-4.49 1.176 1.196-4.381c-.689-1.121-1.059-2.434-1.058-3.373.002-4.149 3.376-7.521 7.535-7.521 4.158 0 7.534 3.373 7.535 7.521z"/>
       </svg>
     </a>
-  </aside>
+  </div>
 
 </body>
 </html>
