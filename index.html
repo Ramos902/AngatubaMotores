@@ -109,8 +109,7 @@
       <!-- Navegação & Botão WhatsApp -->
       <div class="flex items-center gap-4 shrink-0">
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
-          <a href="#loja" class="hover:text-white transition">Loja</a>
-          <a href="#oficina" class="hover:text-white transition">Oficina</a>
+          <a href="#servicos" class="hover:text-white transition">Loja e Oficina</a>
           <a href="#localizacao" class="hover:text-white transition">Localização</a>
         </nav>
 
@@ -191,206 +190,101 @@
   </section>
 
   <!-- ======================================================== -->
-  <!-- 3. SEÇÃO LOJA (CENTRALIZADA E 100VH RESPONSIVA)          -->
+  <!-- 3. SEÇÃO UNIFICADA: LOJA & OFICINA (RESUMIDA E 100VH)    -->
   <!-- ======================================================== -->
-  <section id="loja" class="min-h-screen flex flex-col justify-center py-10 sm:py-16 bg-white border-b border-slate-200">
+  <section id="servicos" class="min-h-screen flex flex-col justify-center py-8 sm:py-14 bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 w-full">
       
       <!-- Cabeçalho Centralizado -->
-      <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-        <p class="text-xs font-bold uppercase tracking-wider text-brand-blue mb-1">Loja e Peças</p>
+      <div class="text-center max-w-2xl mx-auto mb-6 sm:mb-10">
+        <p class="text-xs font-bold uppercase tracking-wider text-brand-blue mb-1">O Que Oferecemos</p>
         <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-dark">
-          Produtos e Materiais Elétricos
+          Loja e Serviços de Oficina
         </h2>
-        <p class="text-slate-600 text-xs sm:text-base mt-2">
-          Equipamentos novos, peças de reposição e componentes elétricos para pronta entrega.
+        <p class="text-slate-600 text-xs sm:text-base mt-1.5">
+          Equipamentos, peças de reposição, materiais elétricos e manutenção especializada.
         </p>
       </div>
 
-      <!-- Grid dos 4 Grupos de Produtos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+      <!-- Dois Pilares Lado a Lado: Loja vs Oficina -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 items-stretch">
         
-        <!-- Motores Elétricos -->
-        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between text-center sm:text-left">
+        <!-- Bloco 1: Produtos e Materiais Elétricos (Loja) -->
+        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 sm:p-6 flex flex-col justify-between text-center sm:text-left">
           <div>
-            <h3 class="font-heading font-bold text-base text-brand-dark mb-1.5">Motores Elétricos</h3>
-            <p class="text-xs text-slate-600 leading-relaxed mb-3">
-              Modelos monofásicos e trifásicos para aplicações agrícolas, comerciais e industriais.
-            </p>
-            <ul class="text-xs text-slate-500 space-y-1 border-t border-slate-200 pt-3 mb-4">
-              <li>Monofásicos e trifásicos</li>
-              <li>Alta e baixa rotação</li>
-              <li>Peças e carcaças de reposição</li>
-            </ul>
+            <div class="border-b border-slate-200 pb-3 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-brand-blue">Venda de Equipamentos e Peças</span>
+              <h3 class="font-heading font-extrabold text-lg sm:text-xl text-brand-dark mt-0.5">
+                Produtos e Materiais Elétricos
+              </h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs mb-5">
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Motores Elétricos</h4>
+                <p class="text-slate-600 leading-relaxed">Monofásicos e trifásicos, alta/baixa rotação e peças de reposição.</p>
+              </div>
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Bombas d'Água</h4>
+                <p class="text-slate-600 leading-relaxed">Submersas para poço, centrífugas, periféricas e pressurizadores.</p>
+              </div>
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Roçadeiras e Peças</h4>
+                <p class="text-slate-600 leading-relaxed">Roçadeiras a combustão, fios de nylon, lâminas, carburadores e velas.</p>
+              </div>
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Materiais Elétricos</h4>
+                <p class="text-slate-600 leading-relaxed">Fios, cabos, disjuntores, contatores, capacitores e chaves de partida.</p>
+              </div>
+            </div>
           </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20pre%C3%A7os%20e%20modelos%20de%20Motores%20El%C3%A9tricos." 
+
+          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20pre%C3%A7o%20e%20estoque%20de%20produtos/materiais%20el%C3%A9tricos%20na%20loja." 
              target="_blank"
              rel="noopener noreferrer"
-             class="w-full text-center bg-brand-navy hover:bg-brand-blue text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
-            Consultar Estoque
+             class="w-full text-center bg-brand-navy hover:bg-brand-blue text-white text-xs sm:text-sm font-semibold py-3 px-4 rounded-lg transition">
+            Consultar Estoque e Preços no WhatsApp
           </a>
         </div>
 
-        <!-- Bombas d'Água -->
-        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between text-center sm:text-left">
+        <!-- Bloco 2: Serviços de Oficina (Assistência Técnica) -->
+        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 sm:p-6 flex flex-col justify-between text-center sm:text-left">
           <div>
-            <h3 class="font-heading font-bold text-base text-brand-dark mb-1.5">Bombas d'Água</h3>
-            <p class="text-xs text-slate-600 leading-relaxed mb-3">
-              Equipamentos para poço artesiano, reservatórios, caixas d'água e irrigação.
-            </p>
-            <ul class="text-xs text-slate-500 space-y-1 border-t border-slate-200 pt-3 mb-4">
-              <li>Bombas submersas para poço</li>
-              <li>Centrífugas e periféricas</li>
-              <li>Pressurizadores e rotores</li>
-            </ul>
+            <div class="border-b border-slate-200 pb-3 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-brand-blue">Manutenção e Reparos</span>
+              <h3 class="font-heading font-extrabold text-lg sm:text-xl text-brand-dark mt-0.5">
+                Serviços de Oficina
+              </h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs mb-5">
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Rebobinamento</h4>
+                <p class="text-slate-600 leading-relaxed">Enrolamento de motores elétricos, isolamento térmico e troca de rolamentos.</p>
+              </div>
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Conserto de Bombas</h4>
+                <p class="text-slate-600 leading-relaxed">Troca de selo mecânico, rotores, vedação e testes hidráulicos em bancada.</p>
+              </div>
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Roçadeiras 2T e 4T</h4>
+                <p class="text-slate-600 leading-relaxed">Limpeza e regulagem de carburadores, revisão de partida retrátil e ignição.</p>
+              </div>
+              <div class="bg-white border border-slate-200/80 rounded-lg p-3.5">
+                <h4 class="font-heading font-bold text-brand-dark text-sm mb-1">Quadros e Comandos</h4>
+                <p class="text-slate-600 leading-relaxed">Montagem de painéis automáticos com chave boia e proteção elétrica.</p>
+              </div>
+            </div>
           </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20Bombas%20d'%C3%81gua%20dispon%C3%ADveis." 
+
+          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20conserto/manuten%C3%A7%C3%A3o%20na%20oficina." 
              target="_blank"
              rel="noopener noreferrer"
-             class="w-full text-center bg-brand-navy hover:bg-brand-blue text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
-            Consultar Estoque
+             class="w-full text-center bg-brand-whatsapp hover:bg-brand-whatsappHover text-white text-xs sm:text-sm font-semibold py-3 px-4 rounded-lg transition">
+            Solicitar Orçamento de Oficina no WhatsApp
           </a>
         </div>
 
-        <!-- Roçadeiras & Peças -->
-        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between text-center sm:text-left">
-          <div>
-            <h3 class="font-heading font-bold text-base text-brand-dark mb-1.5">Roçadeiras e Peças</h3>
-            <p class="text-xs text-slate-600 leading-relaxed mb-3">
-              Equipamentos a combustão e linha de consumíveis para manutenção de áreas verdes.
-            </p>
-            <ul class="text-xs text-slate-500 space-y-1 border-t border-slate-200 pt-3 mb-4">
-              <li>Roçadeiras a combustão</li>
-              <li>Fios de nylon, lâminas e carretéis</li>
-              <li>Carburadores, velas e filtros</li>
-            </ul>
-          </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20Ro%C3%A7adeiras%20e%20pe%C3%A7as%20de%20reposi%C3%A7%C3%A3o." 
-             target="_blank"
-             rel="noopener noreferrer"
-             class="w-full text-center bg-brand-navy hover:bg-brand-blue text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
-            Consultar Estoque
-          </a>
-        </div>
-
-        <!-- Materiais Elétricos -->
-        <div class="bg-brand-surface border border-slate-200 rounded-xl p-5 flex flex-col justify-between text-center sm:text-left">
-          <div>
-            <h3 class="font-heading font-bold text-base text-brand-dark mb-1.5">Materiais Elétricos</h3>
-            <p class="text-xs text-slate-600 leading-relaxed mb-3">
-              Condutores, dispositivos de proteção e componentes para instalações elétricas.
-            </p>
-            <ul class="text-xs text-slate-500 space-y-1 border-t border-slate-200 pt-3 mb-4">
-              <li>Fios, cabos e conectores</li>
-              <li>Disjuntores, contatores e relés</li>
-              <li>Capacitores e chaves de partida</li>
-            </ul>
-          </div>
-          <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o%20de%20materiais%20el%C3%A9tricos." 
-             target="_blank"
-             rel="noopener noreferrer"
-             class="w-full text-center bg-brand-navy hover:bg-brand-blue text-white text-xs font-semibold py-2.5 px-3 rounded-lg transition">
-            Cotar Materiais
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Barra de Suporte ao Balcão Centralizada no Mobile -->
-      <div class="mt-6 sm:mt-8 p-5 rounded-xl bg-slate-100 border border-slate-200 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
-        <div>
-          <p class="font-heading font-bold text-sm text-brand-dark">Procura alguma peça ou medida específica?</p>
-          <p class="text-xs text-slate-600 mt-0.5">Fale direto com nosso balcão pelo WhatsApp para consultar disponibilidade.</p>
-        </div>
-        <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Procuro%20um%20item%20espec%C3%ADfico%20na%20loja." 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="w-full sm:w-auto text-center bg-brand-whatsapp hover:bg-brand-whatsappHover text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition shrink-0">
-          Falar com o Balcão
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ======================================================== -->
-  <!-- 4. SEÇÃO OFICINA (CENTRALIZADA E 100VH RESPONSIVA)       -->
-  <!-- ======================================================== -->
-  <section id="oficina" class="min-h-screen flex flex-col justify-center py-10 sm:py-16 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 w-full">
-      
-      <!-- Cabeçalho Centralizado -->
-      <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-        <p class="text-xs font-bold uppercase tracking-wider text-brand-blue mb-1">Assistência Técnica</p>
-        <h2 class="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-brand-dark">
-          Serviços de Oficina
-        </h2>
-        <p class="text-slate-600 text-xs sm:text-base mt-2">
-          Manutenção preventiva e corretiva com peças de reposição e testes em bancada.
-        </p>
-      </div>
-
-      <!-- Grid dos Serviços de Oficina -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
-        
-        <!-- Rebobinamento -->
-        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 text-center sm:text-left">
-          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-1.5">Rebobinamento de Motores Elétricos</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-            Rebobinamento técnico com isolamento térmico reforçado, substituição de rolamentos e testes elétricos de isolação e corrente.
-          </p>
-          <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded">
-            Motores monofásicos e trifásicos
-          </span>
-        </div>
-
-        <!-- Bombas d'Água -->
-        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 text-center sm:text-left">
-          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-1.5">Manutenção de Bombas d'Água</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-            Troca de selo mecânico, substituição de rotores desgastados, revisão de vedação e testes hidráulicos de pressão.
-          </p>
-          <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded">
-            Bombas submersas, centrífugas e periféricas
-          </span>
-        </div>
-
-        <!-- Roçadeiras & Pequenos Motores -->
-        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 text-center sm:text-left">
-          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-1.5">Conserto de Roçadeiras e Motores 2T/4T</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-            Limpeza e regulagem de carburadores, troca de reparos, revisão de sistema de partida retrátil e ignição.
-          </p>
-          <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded">
-            Revisão completa e regulagem
-          </span>
-        </div>
-
-        <!-- Painéis e Instalações -->
-        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 text-center sm:text-left">
-          <h3 class="font-heading font-bold text-base sm:text-lg text-brand-dark mb-1.5">Quadros de Comando e Instalações</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-            Montagem de quadros de comando automático com chave boia, relé térmico e proteção contra falta de fase.
-          </p>
-          <span class="inline-block bg-slate-100 text-slate-700 text-[11px] font-semibold px-2.5 py-1 rounded">
-            Automação de poços e reservatórios
-          </span>
-        </div>
-
-      </div>
-
-      <!-- Ação da Oficina -->
-      <div class="mt-6 sm:mt-8 p-5 rounded-xl bg-brand-navy text-white flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
-        <div>
-          <p class="font-heading font-bold text-sm text-white">Precisa avaliar seu equipamento?</p>
-          <p class="text-xs text-slate-300 mt-0.5">Traga até nossa oficina ou chame no WhatsApp para tirar dúvidas técnicas.</p>
-        </div>
-        <a href="https://wa.me/5515996145059?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20de%20equipamento%20na%20oficina." 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="w-full sm:w-auto text-center bg-brand-whatsapp hover:bg-brand-whatsappHover text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition shrink-0">
-          Solicitar Orçamento
-        </a>
       </div>
 
     </div>
@@ -499,8 +393,7 @@
 
         <!-- Links -->
         <div class="flex items-center gap-5 text-slate-400">
-          <a href="#loja" class="hover:text-white transition">Loja</a>
-          <a href="#oficina" class="hover:text-white transition">Oficina</a>
+          <a href="#servicos" class="hover:text-white transition">Loja e Oficina</a>
           <a href="#localizacao" class="hover:text-white transition">Localização</a>
           <a href="https://instagram.com/angatuba_motores" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Instagram</a>
         </div>
